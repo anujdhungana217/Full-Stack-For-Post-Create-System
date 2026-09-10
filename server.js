@@ -1,5 +1,7 @@
+import "dotenv/config";
 import app from "./src/app.js"
 import createDb from "./src/db/db.js"
+
 
 createDb()
 

@@ -1,9 +1,7 @@
 import mongoose from "mongoose";
 
 async function connectDb() {
-  await mongoose.connect(
-    "mongodb+srv://LearningAdmin:kZAZ7lYjPCHKOUiI@cluster0.fv8a1gf.mongodb.net/Post-Create",
-  );
+  await mongoose.connect(process.env.MONGO_URL);
   console.log("DataBase COnnected");
 }
 
